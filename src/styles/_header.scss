@@ -1,0 +1,184 @@
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    background-color: $primary-color;
+    height: 80vh;
+    @media(orientation:landscape) {
+       height: auto;
+    }
+    @include respond-to('md') {
+        height: 90vh;
+    }
+    .logo {
+        flex-grow:2;
+        width: 60px;
+        height: 60px;
+        padding: $main-spacing;
+        @include respond-to('sm') {
+            width: 100px;
+            height: 100px;
+            padding: $main-spacing * 2;
+        }
+        &__image {
+            max-width: 100%;
+            
+        }
+    }
+  
+    .title {
+        flex-grow: 4;
+        &__heading {
+            font-family: $secondary-font-family;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: $base-font-size * 2.5;
+            color: $light-text-color;
+            padding: $main-spacing;
+            line-height: 45px;
+          
+            @include respond-to('sm') {
+               font-size: $base-font-size * 3;
+            }
+            @include respond-to('md') {
+                font-size: $base-font-size * 4;
+                letter-spacing: 4px;
+             }
+             @include respond-to('xl') {
+                font-size: $base-font-size * 5;
+                padding: $main-spacing * 1.5;
+             }
+            
+        }
+        &__name::before {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: 50%;
+            transform: translate(-50%);
+            width: 60vw;
+            height: 3px;
+            background-color: #E8C26D;
+            @include respond-to('sm') {
+               width: 45vw;
+             }
+        }
+
+        &__name {
+    
+            position: relative;
+            font-family: $secondary-font-family;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+            color: $light-text-color;
+            padding: $main-spacing /2;
+            font-size: $small-font-size * 1.2;
+            @include respond-to('sm') {
+                font-size: $small-font-size * 1.5;
+                letter-spacing: 3px;
+             
+        }
+    }
+    }
+    
+   
+    &__btn {
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translate(-50%);
+         padding: 10px 8px ;
+         font-size: 12px;
+         border: 0;
+         border-radius: 4px;
+         background-color: $secondary-color;
+         text-transform: uppercase;
+         color: $dark-text-color;
+         letter-spacing: 1px;
+         -webkit-user-select: none; /* Safari */
+         -ms-user-select: none; /* IE 10+ and Edge */
+         user-select: none; /* Standard syntax */
+         &:focus {
+            outline: 0
+         }
+         @include respond-to('sm') {
+            padding: $main-spacing /1.5   $main-spacing * 2;
+            font-size: 16px;
+            letter-spacing: 2px;    
+    }
+
+    @include respond-to('l') {
+        cursor: pointer;
+        z-index: 1;
+  &:before {
+    border-radius: 4px;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: #fff;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: 50%;
+    transition: transform ease-in-out 0.5s;
+  }
+  &:hover {
+    &:before {
+      transform: scaleX(1);
+    }
+  }
+    
+       
+}
+    
+    }
+  
+    .contact-items {
+        max-width: 100vw;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        flex-grow: 2;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        @include respond-to('sm') {
+           width: $main-width;
+           margin: 100px auto;
+          }
+         @include respond-to('sm') {
+        width: $main-width /2;
+         }
+        @media(orientation:landscape) {
+            width: $main-width /2;
+            margin: $main-spacing auto;
+            padding-bottom: 50px;
+         }
+        .contact-item {
+                 
+            @include respond-to('l') {
+                cursor: pointer; 
+                &:hover  .contact-item__image {
+                    fill:#fff;
+                }
+                &__image {
+                    transition: .3s;
+                }
+             }
+              
+            
+            
+        }
+    }
+  
+    
+    
+    
+  
+   
+}

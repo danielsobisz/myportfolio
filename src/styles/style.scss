@@ -1,0 +1,14 @@
+@import 'variables';
+@import 'reset';
+@import 'typography';
+@import 'svg';
+@import 'header';
+@import 'main';
+@import 'footer';
+
+body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }

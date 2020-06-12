@@ -1,0 +1,46 @@
+.footer {
+    min-height: 150px;
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: $small-font-size ;
+    @include respond-to('sm') {
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+
+}
+    &__credits-container {
+       padding: $main-spacing /4;
+        color: $light-text-color;
+        flex-basis: 30%;
+      
+        &--bigger-width {
+            flex-basis: 40%;
+        }
+        .credits__name {
+            
+            font-size: $base-font-size;
+            .name--border-bottom {
+                border-top: 1px solid white;
+                border-bottom: 1px solid white;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                color: #E8C26D;
+                letter-spacing: 2px;
+                @include respond-to('sm') {
+                   
+            border:0;
+          padding: 15px;               
+            border-left:1px solid white; ;
+            border-right: 1px solid white;;
+         }
+           }
+        }
+        
+    }
+}

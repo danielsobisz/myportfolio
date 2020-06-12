@@ -1,0 +1,32 @@
+.technologies__item__image-1{
+ 
+    fill:#373657;
+   
+}
+.technologies__item__image-2{
+    fill:#f79e86;
+}
+.contact-item__image {
+    fill:#f79e86;
+ 
+}
+
+// Portfolio SVGs
+.play-button-1 {
+    fill: #fff;
+}
+.play-button-2 {
+    fill:none;
+    stroke-width:5px;
+    stroke: #ffffff;
+    stroke-miterlimit:10;
+}
+.button-portfolio {
+    padding: 0 $main-spacing / 2;
+    
+    .contact-item__image {
+        fill: #fff;
+        
+    }
+  
+}
