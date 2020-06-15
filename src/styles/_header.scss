@@ -5,12 +5,14 @@
     justify-content: space-around;
     align-content: space-around;
     background-color: $primary-color;
-    height: 80vh;
+
+    min-height: 70vh;
+
     @media(orientation:landscape) {
        height: auto;
     }
     @include respond-to('md') {
-        height: 90vh;
+        min-height: 90vh;
     }
     .logo {
         flex-grow:2;
@@ -99,22 +101,26 @@
          text-transform: uppercase;
          color: $dark-text-color;
          letter-spacing: 1px;
-         -webkit-user-select: none; /* Safari */
-         -ms-user-select: none; /* IE 10+ and Edge */
-         user-select: none; /* Standard syntax */
+         -webkit-user-select: none; 
+         -ms-user-select: none; 
+         user-select: none; 
          &:focus {
             outline: 0
+         }
+         &--hyperlink {
+            color: $dark-text-color;
+            text-decoration: none;
          }
          @include respond-to('sm') {
             padding: $main-spacing /1.5   $main-spacing * 2;
             font-size: 16px;
             letter-spacing: 2px;    
-    }
-
-    @include respond-to('l') {
-        cursor: pointer;
-        z-index: 1;
-  &:before {
+        }
+        @include respond-to('l') {
+            cursor: pointer;
+            z-index: 1;
+   
+    &:before {
     border-radius: 4px;
     content: "";
     position: absolute;
@@ -128,14 +134,14 @@
     transform-origin: 50%;
     transition: transform ease-in-out 0.5s;
   }
-  &:hover {
+    &:hover {
     &:before {
       transform: scaleX(1);
     }
   }
     
        
-}
+    }
     
     }
   
@@ -160,7 +166,6 @@
             padding-bottom: 50px;
          }
         .contact-item {
-                 
             @include respond-to('l') {
                 cursor: pointer; 
                 &:hover  .contact-item__image {

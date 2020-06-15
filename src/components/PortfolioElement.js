@@ -34,10 +34,25 @@ class PortfolioELement extends React.Component {
 
                 <div className={"portfolio__item--opened" + (this.state.active ? ' active' : '')} >
                     <FontAwesomeIcon icon={faTimes} className="font-awesome__icon" onClick={this.handleClickClose} />
+                    <h3 className="portfolio__item__name">{this.props.name}</h3>
                     <p className="portfolio__item__text">{this.props.text}</p>
                     <div className="portfolio__item__svg">
-                        <a href={this.props.linkGithub}>  <SVGIcon name="github" className="button-portfolio" width={50}></SVGIcon></a>
-                        <a href={this.props.linkLive}> <SVGIcon name="play-button" className="button-portfolio" width={50} /></a>
+                        {this.props.disabledGithub ?
+                            <div className="svg__button--disabled">
+                                <SVGIcon name="github" className="button-portfolio" width={50}></SVGIcon>
+                            </div>
+                            :
+                            <div className="svg__button"> <a href={this.props.linkGithub}>  <SVGIcon name="github" className="button-portfolio" width={50}></SVGIcon></a>
+                            </div>}
+                        {this.props.disabledLive ?
+                            <div className="svg__button--disabled">
+                                <SVGIcon name="play-button" className="button-portfolio" width={50}></SVGIcon>
+                            </div>
+                            :
+                            <div className="svg__button">  <a href={this.props.linkLive}> <SVGIcon name="play-button" className="button-portfolio" width={50} /></a></div>}
+
+
+
                     </div>
                 </div>
 

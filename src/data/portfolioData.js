@@ -6,7 +6,9 @@ const portfolioContent = [
         id: 0,
         name: "WeatherChannel",
         className: "portfolio__item--one",
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eius. Vitae animi et voluptates ffffffff?",
+        disabledGithub: false,
+        disabledLive: false,
+        text: "Aplikacja pogodowa z wykorzystaniem Rest API napisana w React.",
         linkGithub: "https://github.com/danielsobisz/weatherchannel",
         linkLive: "https://danielsobisz.github.io/weatherchannel/"
     },
@@ -14,7 +16,9 @@ const portfolioContent = [
         id: 1,
         name: "Piracik",
         className: "portfolio__item--two",
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eius. Vitae animi et voluptates ipsum?",
+        disabledGithub: true,
+        disabledLive: false,
+        text: "Strona-wizytówka pokojów wypoczynkowych Piracik.",
         linkGithub: "https://github.com/danielsobisz/piracik",
         linkLive: "http://www.pokojepiracik.pl/"
     },
@@ -22,16 +26,30 @@ const portfolioContent = [
         id: 2,
         name: "SoniaKuras",
         className: "portfolio__item--four",
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eius. Vitae animi et voluptates ipsum?",
+        disabledGithub: true,
+        disabledLive: false,
+        text: "Strona-wizytówka specjalisty psycholog.",
         linkGithub: "https://github.com/danielsobisz/weatherchannel",
-        linkLive: "https://danielsobisz.github.io/weatherchannel/"
+        linkLive: "http://soniakuras.com/"
     },
     {
         id: 3,
         name: "CompareProducts",
         className: "portfolio__item--three",
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eius. Vitae animi et voluptates ipsum?",
-        linkGithub: "https://github.com/danielsobisz/weatherchannel",
+        disabledGithub: true,
+        disabledLive: true,
+        text: "Prosta porównywarka produktów napisana w React(W trakcie realizacji).",
+        linkGithub: "https://github.com/danielsobisz/compareproducts",
+        linkLive: "https://danielsobisz.github.io/weatherchannel/"
+    },
+    {
+        id: 4,
+        name: "Portfolio",
+        className: "portfolio__item--five",
+        disabledGithub: false,
+        disabledLive: false,
+        text: "Strona, na której się znajdujesz.",
+        linkGithub: "https://github.com/danielsobisz/compareproducts",
         linkLive: "https://danielsobisz.github.io/weatherchannel/"
     },
 ]

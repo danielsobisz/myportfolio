@@ -1,13 +1,12 @@
 const technologiesData = [
     {
         id: 0,
-        className: "html-icon",
+        iconName: "html-icon",
         name: "html",
         attributes:
             [
-                "- SEMANTIC CODE",
-                "- MANY MANY DIVS",
-                "- MOORE DIVS"
+                "- Metodologia BEM",
+
 
             ]
 
@@ -15,13 +14,13 @@ const technologiesData = [
     },
     {
         id: 1,
-        className: "css-icon",
+        iconName: "css-icon",
         name: "css",
         attributes:
             [
-                "- SEMANTIC CODE",
-                "- MANY MANY DIVS",
-                "- MOORE DIVS"
+                "- Flexbox",
+                "- Grid",
+                "- Animacje keyframes"
 
             ]
 
@@ -29,14 +28,14 @@ const technologiesData = [
     },
     {
         id: 2,
-        className: "js-icon",
+        iconName: "js-icon",
         name: "javascript",
         attributes:
             [
-                "- SEMANTIC CODE",
-                "- MANY MANY DIVS",
-                "- MOORE DIVS",
-                "-Składnia ES6+"
+
+                "- Składnia ES6+",
+                "- Rest API",
+                "- GSAP"
 
             ]
 
@@ -44,13 +43,13 @@ const technologiesData = [
     },
     {
         id: 3,
-        className: "react-icon",
+        iconName: "react-icon",
         name: "react",
         attributes:
             [
-                "- SEMANTIC CODE",
-                "- MANY MANY DIVS",
-                "- MOORE DIVS"
+                "- Podstawy Redux",
+                "- React Router",
+                "- React Hooks"
 
             ]
 
@@ -58,13 +57,12 @@ const technologiesData = [
     },
     {
         id: 4,
-        className: "sass-icon",
+        iconName: "sass-icon",
         name: "sass",
         attributes:
             [
-                "- SEMANTIC CODE",
-                "- MANY MANY DIVS",
-                "- MOORE DIVS"
+                "- Składnia SASS/SCSS",
+
 
             ]
 
@@ -72,13 +70,12 @@ const technologiesData = [
     },
     {
         id: 5,
-        className: "bs-icon",
+        iconName: "bs-icon",
         name: "bootstrap",
         attributes:
             [
-                "- SEMANTIC CODE",
-                "- MANY MANY DIVS",
-                "- MOORE DIVS"
+                "- Wykorzystanie gotowych bibliotek bootstrapa",
+
 
             ]
 
@@ -86,13 +83,12 @@ const technologiesData = [
     },
     {
         id: 6,
-        className: "rwd-icon",
+        iconName: "rwd-icon",
         name: "rwd",
         attributes:
             [
-                "- SEMANTIC CODE",
-                "- MANY MANY DIVS",
-                "- MOORE DIVS"
+                "- Strony dopasowane do każdej rozdzielczości",
+
 
             ]
 
@@ -100,13 +96,13 @@ const technologiesData = [
     },
     {
         id: 7,
-        className: "git-icon",
+        iconName: "git-icon",
         name: "git",
         attributes:
             [
-                "- SEMANTIC CODE",
-                "- MANY MANY DIVS",
-                "- MOORE DIVS"
+                "- Podstawowe komendy Gita",
+                "- Github",
+
 
             ]
 
