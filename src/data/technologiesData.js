@@ -57,19 +57,6 @@ const technologiesData = [
     },
     {
         id: 4,
-        iconName: "sass-icon",
-        name: "sass",
-        attributes:
-            [
-                "- Składnia SASS/SCSS",
-
-
-            ]
-
-
-    },
-    {
-        id: 5,
         iconName: "bs-icon",
         name: "bootstrap",
         attributes:
@@ -81,6 +68,20 @@ const technologiesData = [
 
 
     },
+    {
+        id: 5,
+        iconName: "sass-icon",
+        name: "sass",
+        attributes:
+            [
+                "- Składnia SASS/SCSS",
+
+
+            ]
+
+
+    },
+
     {
         id: 6,
         iconName: "rwd-icon",

@@ -25,22 +25,22 @@ const portfolioContent = [
     {
         id: 2,
         name: "SoniaKuras",
-        className: "portfolio__item--four",
+        className: "portfolio__item--three",
         disabledGithub: true,
         disabledLive: false,
         text: "Strona-wizytówka specjalisty psycholog.",
-        linkGithub: "https://github.com/danielsobisz/weatherchannel",
+        linkGithub: null,
         linkLive: "http://soniakuras.com/"
     },
     {
         id: 3,
         name: "CompareProducts",
-        className: "portfolio__item--three",
+        className: "portfolio__item--four",
         disabledGithub: true,
         disabledLive: true,
         text: "Prosta porównywarka produktów napisana w React(W trakcie realizacji).",
         linkGithub: "https://github.com/danielsobisz/compareproducts",
-        linkLive: "https://danielsobisz.github.io/weatherchannel/"
+        linkLive: null
     },
     {
         id: 4,
@@ -49,8 +49,18 @@ const portfolioContent = [
         disabledGithub: false,
         disabledLive: false,
         text: "Strona, na której się znajdujesz.",
-        linkGithub: "https://github.com/danielsobisz/compareproducts",
-        linkLive: "https://danielsobisz.github.io/weatherchannel/"
+        linkGithub: null,
+        linkLive: null
+    },
+    {
+        id: 5,
+        name: "Więcej projektów",
+        className: "portfolio__item--six",
+        disabledGithub: true,
+        disabledLive: true,
+        text: "Wkrótce pojawi się tutaj więcej projektów",
+        linkGithub: null,
+        linkLive: null,
     },
 ]
 

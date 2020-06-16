@@ -1,0 +1,126 @@
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: $main-spacing*2;
+    justify-content: space-around;
+    align-items: center;
+    @include respond-to('l') {
+     width: $main-width;
+     margin: 2vh auto 7vh;
+    }
+    @include respond-to('xl') {
+      width: $main-width / 1.5;
+      
+     }
+     &__heading {
+       flex-basis: 100%;
+       font-family: $primary-font-family;
+       padding:  $main-spacing 0;
+       text-transform: uppercase;
+       font-size: $base-font-size * 2;
+      
+      letter-spacing: 2px;
+       .span_text {
+        border-bottom: 2px solid black;
+       }
+     }
+    
+    &__item {
+      position: relative;
+      flex-basis: 35%;
+      margin: $main-spacing * 2 $main-spacing;
+      text-align: center;
+     @include respond-to('sm') {
+      flex-basis: 20%;  
+        }
+        &__name{
+          width: 100%;
+          height: 100%;
+           padding: $main-spacing /2; 
+           text-transform: uppercase;
+           transition: .3s linear;
+         &--active {
+           color: white;
+         }
+         }
+      &__text {
+        text-transform: uppercase;
+        padding: $main-spacing/2;
+     
+      }
+      .show-block {
+        position: relative;
+          z-index: 1;
+          height: 75px;
+          width: 75px;
+          &--svg-container {
+            height: 100%;
+            width: 100%;
+          
+            background-color: $primary-color;
+            border-radius: 7px;
+            padding: $main-spacing/2;
+            @include respond-to('l') {
+              cursor: pointer;
+            }
+           
+          }
+          &--active {
+           
+            z-index: 4;
+         
+          }
+        
+        }
+        .show-hidden {
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+          justify-content:flex-end;
+          align-items: center;
+          overflow: hidden;
+          text-align: center;
+          -webkit-animation:   opening-div .3s linear 1 ;
+          animation: 
+           opening-div .3s linear 1 ;
+          border-radius: 14px;
+          position: absolute;
+          left:0;
+          top: 0;
+          width: 220px;
+          min-height:320px;
+          background-color:$primary-color;
+          border-bottom: 10px solid $secondary-color;
+          z-index: 3;
+          
+          &__text {
+            opacity: 0;
+            padding: 20px;
+            color: white;
+             animation: text-opacity .3s linear forwards ;
+            animation-delay: .2s;
+            
+          }
+          &__text:nth-child(1) {
+            border-top: 1px solid white;
+          }
+          
+          
+            
+          
+          
+          .direction-r &--active {
+           left: -125px;
+           -webkit-animation:   opening-div-reverse .3s linear 1 ;
+           animation: 
+            opening-div-reverse .3s linear 1 ;
+            
+           }
+          
+        
+      }
+    }
+  }
+
+
+

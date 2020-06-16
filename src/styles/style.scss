@@ -3,6 +3,8 @@
 @import 'typography';
 @import 'svg';
 @import 'keyframes';
+@import 'TechnologiesElement';
+@import 'portfolioelement';
 @import 'header';
 @import 'main';
 @import 'footer';
@@ -15,3 +17,23 @@ body {
     max-width: 1920px;
     margin: 0 auto;
   }
+
+  /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $secondary-color;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

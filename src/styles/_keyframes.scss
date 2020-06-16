@@ -8,9 +8,12 @@
     20% {
       opacity: 1;
     }
+    70% {
+      width: 220px;
+    }
     100% {
-      top: .5px;
-      width: 250px;
+      top: 0px;
+
       height: 320px;
       
     }
@@ -20,7 +23,7 @@
   @keyframes opening-div-reverse {
     0% {
       opacity: 0;
-      left: 50px;
+      left: 95px;
       top: -.5px;
       width: 0;
       height: 0;
@@ -28,10 +31,14 @@
     20% {
       opacity: 1;
     }
+    70% {
+      width: 220px;
+      left: -125px;
+    }
     100% {
-      top: -.5px;
-      left:-150px;
-      width: 250px;
+      top: 0px;
+     
+   
       height: 320px;
       
     }

@@ -4,23 +4,33 @@ import PortfolioElement from '../components/PortfolioElement';
 import PortfolioData from '../data/portfolioData';
 import TechnologiesElement from '../components/TechnologiesElement';
 import TechnologiesData from '../data/technologiesData';
-import ScrollAnimation from 'react-animate-on-scroll';
+
+
 
 class Main extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { activeIndex: null };
+        this.state = {
+            activeIndex: null,
+
+        };
     }
 
     handleItemClick(index) {
+
         if (this.state.activeIndex !== index) {
+
             this.setState({ activeIndex: index });
+
         }
 
         if (this.state.activeIndex === index) {
+
             this.setState({ activeIndex: null });
+
         }
     }
+
     render() {
         let activeIndex = this.state.activeIndex;
         const portfolioItems = PortfolioData.map(el => <PortfolioElement key={el.id} className={el.className} name={el.name} text={el.text} linkGithub={el.linkGithub} linkLive={el.linkLive} disabledGithub={el.disabledGithub} disabledLive={el.disabledLive} />)
@@ -44,17 +54,17 @@ class Main extends React.Component {
                         <div className="quote__icon"><img className="quote__icon__image" src={quoteImage} alt="" /></div>
                     </figure>
                 </div>
-                <ScrollAnimation animateIn='fadeInUp' animateOnce={true} > <div className="about" duration="2">
+                <div className="about">
                     <h2 className="about__heading">Cześć, jestem Daniel</h2>
                     <p className="about__text">Swoją przygodę z programowaniem zacząłem w marcu 2019 roku, przez ten czas zrealizowałem kilka komercyjnych projektów. Z dnia na dzień rozwijam  swoje umiejętności z zakresu front-endu. W swojej pracy używam najnowszych technologii oraz przykładam wagę do każdego szczegółu.</p>
-                </div></ScrollAnimation>
+                </div>
 
-                <ScrollAnimation animateIn='fadeInUp' animateOnce={true} duration="1.5">
-                    <div className="technologies" id="tech">
-                        <h2 className="technologies__heading"><span className="span_text"> Technologie</span></h2>
-                        {technologiesItems}
-                    </div>
-                </ScrollAnimation>
+
+                <div className="technologies" id="tech">
+                    <h2 className="technologies__heading"><span className="span_text"> Technologie</span></h2>
+                    {technologiesItems}
+                </div>
+
                 <div className="portfolio">{portfolioItems}</div>
 
             </main>
