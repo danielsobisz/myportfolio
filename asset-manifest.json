@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/myportfolio/static/css/main.60cceb1b.chunk.css",
+    "main.js": "/myportfolio/static/js/main.5afa3686.chunk.js",
+    "main.js.map": "/myportfolio/static/js/main.5afa3686.chunk.js.map",
+    "runtime-main.js": "/myportfolio/static/js/runtime-main.6d27cfd8.js",
+    "runtime-main.js.map": "/myportfolio/static/js/runtime-main.6d27cfd8.js.map",
+    "static/js/2.2ae2ea4f.chunk.js": "/myportfolio/static/js/2.2ae2ea4f.chunk.js",
+    "static/js/2.2ae2ea4f.chunk.js.map": "/myportfolio/static/js/2.2ae2ea4f.chunk.js.map",
+    "index.html": "/myportfolio/index.html",
+    "precache-manifest.fcf5006f95038db0ba698a33f7e7eb95.js": "/myportfolio/precache-manifest.fcf5006f95038db0ba698a33f7e7eb95.js",
+    "service-worker.js": "/myportfolio/service-worker.js",
+    "static/css/main.60cceb1b.chunk.css.map": "/myportfolio/static/css/main.60cceb1b.chunk.css.map",
+    "static/js/2.2ae2ea4f.chunk.js.LICENSE.txt": "/myportfolio/static/js/2.2ae2ea4f.chunk.js.LICENSE.txt",
+    "static/media/style.scss": "/myportfolio/static/media/weatherchannel.2375c42a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6d27cfd8.js",
+    "static/js/2.2ae2ea4f.chunk.js",
+    "static/css/main.60cceb1b.chunk.css",
+    "static/js/main.5afa3686.chunk.js"
+  ]
+}
