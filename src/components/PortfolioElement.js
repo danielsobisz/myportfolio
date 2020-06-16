@@ -30,7 +30,7 @@ class PortfolioELement extends React.Component {
 
             <div className={"portfolio__item " + (this.props.className)} key={this.props.id} onClick={this.handleClickOpen}>
 
-                /  <div className={"portfolio__item--opened" + (this.state.active ? ' active' : '')} >
+                <div className={"portfolio__item--opened" + (this.state.active ? ' active' : '')} >
                     <FontAwesomeIcon icon={faTimes} className="font-awesome__icon" onClick={this.handleClickClose} />
                     <h3 className="portfolio__item__name">{this.props.name}</h3>
                     <p className="portfolio__item__text">{this.props.text}</p>

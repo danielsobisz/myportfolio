@@ -72,55 +72,57 @@
           }
         
         }
-        .show-hidden {
-          overflow: hidden;
-          display: flex;
-          flex-direction: column;
-          justify-content:flex-end;
-          align-items: center;
-          overflow: hidden;
-          text-align: center;
-          -webkit-animation:   opening-div .3s linear 1 ;
-          animation: 
-           opening-div .3s linear 1 ;
-          border-radius: 14px;
-          position: absolute;
-          left:0;
-          top: 0;
-          width: 220px;
-          min-height:320px;
-          background-color:$primary-color;
-          border-bottom: 10px solid $secondary-color;
-          z-index: 3;
-          
-          &__text {
-            opacity: 0;
-            padding: 20px;
-            color: white;
-             animation: text-opacity .3s linear forwards ;
-            animation-delay: .2s;
-            
-          }
-          &__text:nth-child(1) {
-            border-top: 1px solid white;
-          }
-          
-          
-            
-          
-          
-          .direction-r &--active {
-           left: -125px;
-           -webkit-animation:   opening-div-reverse .3s linear 1 ;
-           animation: 
-            opening-div-reverse .3s linear 1 ;
-            
-           }
-          
-        
-      }
+  
+       
     }
+ 
   }
 
 
 
+  .show-hidden {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+    -webkit-animation:   opening-div .3s linear 1 ;
+    animation: 
+     opening-div .3s linear 1 ;
+    border-radius: 14px;
+    position: absolute;
+    left:0;
+    top: 0;
+    width: 220px;
+    min-height:320px;
+    background-color:$primary-color;
+    border-bottom: 10px solid $secondary-color;
+    z-index: 3;
+    
+    &__text {
+      opacity: 0;
+      padding: 20px;
+      color: white;
+       animation: text-opacity .3s linear forwards ;
+      animation-delay: .2s;
+      
+    }
+    &__text:nth-child(1) {
+      border-top: 1px solid white;
+    }
+    
+    
+    .direction-r & {
+      left: -125px;
+      -webkit-animation:   opening-div-reverse .3s linear 1 ;
+      animation: 
+       opening-div-reverse .3s linear 1 ;
+       
+      }
+    
+    
+ 
+  
+}

@@ -49,8 +49,8 @@ const portfolioContent = [
         disabledGithub: false,
         disabledLive: false,
         text: "Strona, na której się znajdujesz.",
-        linkGithub: null,
-        linkLive: null
+        linkGithub: 'https://github.com/danielsobisz/myportfolio',
+        linkLive: 'https://danielsobisz.github.io/myportfolio/'
     },
     {
         id: 5,
