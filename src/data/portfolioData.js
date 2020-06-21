@@ -36,11 +36,11 @@ const portfolioContent = [
         id: 3,
         name: "CompareProducts",
         className: "portfolio__item--four",
-        disabledGithub: true,
-        disabledLive: true,
+        disabledGithub: false,
+        disabledLive: false,
         text: "Prosta porównywarka produktów napisana w React(W trakcie realizacji).",
         linkGithub: "https://github.com/danielsobisz/compareproducts",
-        linkLive: null
+        linkLive: "https://danielsobisz.github.io/compareproducts/"
     },
     {
         id: 4,
