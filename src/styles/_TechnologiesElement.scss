@@ -1,128 +1,95 @@
 .technologies {
+  &__container {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: $main-spacing*2;
     justify-content: space-around;
-    align-items: center;
-    @include respond-to('l') {
-     width: $main-width;
-     margin: 2vh auto 7vh;
+    padding: 10vh 0;
+    @include respond-to("l") {
+      width: 60%;
+      margin: 0 auto;
     }
-    @include respond-to('xl') {
-      width: $main-width / 1.5;
-      
-     }
-     &__heading {
-       flex-basis: 100%;
-       font-family: $primary-font-family;
-       padding:  $main-spacing 0;
-       text-transform: uppercase;
-       font-size: $base-font-size * 2;
-      
-      letter-spacing: 2px;
-       .span_text {
-        border-bottom: 2px solid black;
-       }
-     }
-    
-    &__item {
-      position: relative;
-      flex-basis: 35%;
-      margin: $main-spacing * 2 $main-spacing;
-      text-align: center;
-     @include respond-to('sm') {
-      flex-basis: 20%;  
-        }
-        &__name{
-          width: 100%;
-          height: 100%;
-           padding: $main-spacing /2; 
-           text-transform: uppercase;
-           transition: .3s linear;
-         &--active {
-           color: white;
-         }
-         }
-      &__text {
-        text-transform: uppercase;
-        padding: $main-spacing/2;
-     
-      }
-      .show-block {
-        position: relative;
-          z-index: 1;
-          height: 75px;
-          width: 75px;
-          &--svg-container {
-            height: 100%;
-            width: 100%;
-          
-            background-color: $primary-color;
-            border-radius: 7px;
-            padding: $main-spacing/2;
-            @include respond-to('l') {
-              cursor: pointer;
-            }
-           
-          }
-          &--active {
-           
-            z-index: 4;
-         
-          }
-        
-        }
-  
-       
-    }
- 
   }
-
-
-
-  .show-hidden {
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content:flex-end;
-    align-items: center;
-    overflow: hidden;
-    text-align: center;
-    -webkit-animation:   opening-div .3s linear 1 ;
-    animation: 
-     opening-div .3s linear 1 ;
-    border-radius: 14px;
-    position: absolute;
-    left:0;
-    top: 0;
-    width: 220px;
-    min-height:320px;
-    background-color:$primary-color;
-    border-bottom: 10px solid $secondary-color;
-    z-index: 3;
-    
-    &__text {
-      opacity: 0;
-      padding: 20px;
-      color: white;
-       animation: text-opacity .3s linear forwards ;
-      animation-delay: .2s;
-      
+  &__heading {
+    flex-basis: 100%;
+    font-family: $primary-font-family;
+    padding: $main-spacing 0;
+    text-transform: uppercase;
+    font-size: $base-font-size * 2;
+    letter-spacing: 2px;
+    @include respond-to("l") {
+      font-size: $base-font-size * 2.5;
     }
-    &__text:nth-child(1) {
-      border-top: 1px solid white;
+    .span_text {
+      padding-left: 10px;
+      border-bottom: 2px solid $black-color;
     }
-    
-    
-    .direction-r & {
-      left: -125px;
-      -webkit-animation:   opening-div-reverse .3s linear 1 ;
-      animation: 
-       opening-div-reverse .3s linear 1 ;
-       
+  }
+  &__item {
+    flex-basis: 50%;
+    margin: $main-spacing 0;
+
+    @include respond-to("md") {
+      flex-basis: 25%;
+    }
+    &__wrapper {
+      margin: 0 auto;
+      width: 75px;
+      height: 75px;
+      position: relative;
+      background-color: $primary-color;
+      border-radius: 10px;
+      text-align: center;
+    }
+    &__content {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: $primary-color;
+      border-radius: 10px;
+      transition: 0.3s;
+      -webkit-box-shadow: 4px 4px 2px 0px rgba(38, 37, 38, 1);
+      -moz-box-shadow: 4px 4px 2px 0px rgba(38, 37, 38, 1);
+      box-shadow: 4px 4px 2px 0px rgba(38, 37, 38, 1);
+      overflow: hidden;
+      @include respond-to("l") {
+        cursor: pointer;
       }
-    
-    
- 
-  
+      &.active {
+        height: 200px;
+        width: 200px;
+        z-index: 5;
+      }
+      &__paragraph {
+        padding: $main-spacing/4 0;
+      }
+      &--onactive {
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        // margin-top: $main-spacing;
+        color: $light-text-color;
+        transform: translateY(250px);
+        transition: 3s;
+        &.active {
+          animation: text-slide 0.5s linear forwards;
+        }
+      }
+      .technologies__item__name {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      .svg__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 75px;
+        height: 75px;
+      }
+    }
+  }
+  .direction-r .technologies__item__content.active {
+    transform: translateX(-125px);
+  }
 }

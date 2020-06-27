@@ -1,54 +1,17 @@
-@keyframes opening-div {
-    0% {
-      opacity: 0;
-      width: 0;
-      height: 0;
-      top: -.5px;
-    }
-    20% {
-      opacity: 1;
-    }
-    70% {
-      width: 220px;
-    }
-    100% {
-      top: 0px;
-
-      height: 320px;
-      
-    }
+@keyframes text-slide {
+  0% {
+    transform: translateY(250px);
   }
-  
-  
-  @keyframes opening-div-reverse {
-    0% {
-      opacity: 0;
-      left: 95px;
-      top: -.5px;
-      width: 0;
-      height: 0;
-    }
-    20% {
-      opacity: 1;
-    }
-    70% {
-      width: 220px;
-      left: -125px;
-    }
-    100% {
-      top: 0px;
-     
-   
-      height: 320px;
-      
-    }
+  25% {
+    transform: translateY(150px);
   }
-  @keyframes text-opacity {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-      
-    }
+  50% {
+    transform: translateY(100px);
   }
+  75% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

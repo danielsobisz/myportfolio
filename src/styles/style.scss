@@ -1,24 +1,24 @@
-@import 'variables';
-@import 'reset';
-@import 'typography';
-@import 'svg';
-@import 'keyframes';
-@import 'TechnologiesElement';
-@import 'portfolioelement';
-@import 'header';
-@import 'main';
-@import 'footer';
+@import "variables";
+@import "reset";
+@import "typography";
+@import "svg";
+@import "keyframes";
+@import "TechnologiesElement";
+@import "portfolioelement";
+@import "header";
+@import "main";
+@import "footer";
 
 body {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    max-width: 1920px;
-    margin: 0 auto;
-  }
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  max-width: 1920px;
+  margin: 0 auto;
+}
 
-  /* width */
+/* width */
 ::-webkit-scrollbar {
   width: 10px;
 }

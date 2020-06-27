@@ -1,40 +1,33 @@
 //Header SVGs
 
-.logo_svg{
-    fill: #ffffff;
+.logo_svg {
+  fill: $white-color;
 }
 
-
-.technologies__item__image-1{
-    fill:#f79e86;
-
+.technologies__item__image-1 {
+  fill: $secondary-color;
 }
-.technologies__item__image-2{
-    
-    fill:#373657;
-   
+.technologies__item__image-2 {
+  fill: $primary-color;
 }
 .contact-item__image {
-    fill:#f79e86;
- 
+  fill: $secondary-color;
 }
 
 // Portfolio SVGs
 .play-button-1 {
-    fill: #fff;
+  fill: $white-color;
 }
 .play-button-2 {
-    fill:none;
-    stroke-width:5px;
-    stroke: #ffffff;
-    stroke-miterlimit:10;
+  fill: none;
+  stroke-width: 5px;
+  stroke: $white-color;
+  stroke-miterlimit: 10;
 }
 .button-portfolio {
-    padding: 0 $main-spacing / 2;
-    
-    .contact-item__image {
-        fill: #fff;
-        
-    }
-  
+  padding: 0 $main-spacing / 2;
+
+  .contact-item__image {
+    fill: $white-color;
+  }
 }
