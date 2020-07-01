@@ -1,7 +1,7 @@
 .portfolio {
   @media (orientation: landscape) {
-    display: flex;
-    flex-wrap: wrap;
+    // width: 70%;
+    // margin: 0 auto;
   }
   @include respond-to("sm") {
     display: flex;
@@ -93,6 +93,7 @@
 
     @media (orientation: landscape) {
       flex-basis: 50%;
+      height: 350px;
     }
     @include respond-to("sm") {
       flex-basis: 50%;
