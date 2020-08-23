@@ -26,7 +26,7 @@ const portfolioContent = [
     disabledGithub: true,
     disabledLive: false,
     text: "Strona-wizytówka specjalisty psycholog.",
-    linkGithub: null,
+    linkGithub: "https://github.com/danielsobisz/soniakuras",
     linkLive: "http://soniakuras.com/",
   },
   {
@@ -35,10 +35,9 @@ const portfolioContent = [
     className: "portfolio__item--four",
     disabledGithub: false,
     disabledLive: false,
-    text:
-      "Prosta porównywarka produktów napisana w React(W trakcie realizacji).",
-    linkGithub: "https://github.com/danielsobisz/compareproducts",
-    linkLive: "https://danielsobisz.github.io/compareproducts/",
+    text: "Prosta porównywarka produktów napisana w React.",
+    linkGithub: "https://github.com/danielsobisz/CompareProducts",
+    linkLive: "https://danielsobisz.github.io/CompareProducts/",
   },
   {
     id: 4,

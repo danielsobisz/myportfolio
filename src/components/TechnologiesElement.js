@@ -15,7 +15,7 @@ const TechnologiesElement = (props) => {
           <div className="svg__container">
             <SVGIcon
               name={iconName}
-              width={50}
+              width={40}
               className="technologies__item__image"
             />
           </div>
