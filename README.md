@@ -1,1 +1,1 @@
-A static portfolio writed in React.
+A static portfolio.
